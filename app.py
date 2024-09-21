@@ -25,7 +25,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-llm = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model="gpt-4o-mini", temperature=0.7, max_tokens=100)  # You can adjust the temperature for creativity
+llm = ChatOpenAI( api_key=OPENAI_API_KEY, model="gpt-4o-mini", temperature=0.7, max_tokens=100)  # You can adjust the temperature for creativity
 
 # Define the prompt template
 template = """
